@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>我的主页 - Cloudflare Style</title>
+    <title>我的主页</title>
     <style>
         body {
             margin: 0; padding: 60px 20px;
@@ -11,27 +11,27 @@
             background-color: #f8f9fa; color: #1f1f1f;
             display: flex; justify-content: center;
         }
-        。container { width: 100%; max-width: 900px; }
+        .container { width: 100%; max-width: 900px; }
         /* 个人简介区 */
-        。header { text-align: center; margin-bottom: 60px; }
-        。avatar {
+        .header { text-align: center; margin-bottom: 60px; }
+        .avatar {
             width: 80px; height: 80px; border-radius: 50%;
             background: #f6821f; color: white;
             display: flex; justify-content: center; align-items: center;
             font-size: 32px; font-weight: 600; margin: 0 auto 20px auto;
         }
-        。header h1 { margin: 0 0 12px 0; font-size: 32px; font-weight: 700; letter-spacing: -0.5px; }
-        。header p { margin: 0 auto; max-width: 600px; color: #5c5c5c; font-size: 16px; line-height: 1.6; }
-        。links { margin-top: 24px; }
-        。links a {
+        .header h1 { margin: 0 0 12px 0; font-size: 32px; font-weight: 700; letter-spacing: -0.5px; }
+        .header p { margin: 0 auto; max-width: 600px; color: #5c5c5c; font-size: 16px; line-height: 1.6; }
+        .links { margin-top: 24px; }
+        .links a {
             display: inline-block; color: #f6821f; text-decoration: none; margin: 0 12px; font-weight: 600; font-size: 15px;
         }
-        。links a:hover { color: #d96f15; text-decoration: underline; }
+        .links a:hover { color: #d96f15; text-decoration: underline; }
         
         /* 项目展示区 */
-        。section-title { font-size: 22px; font-weight: 700; margin-bottom: 24px; color: #1f1f1f; text-align: center; }
-        。projects-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(360px, 1fr)); gap: 24px; }
-        。project-card {
+        .section-title { font-size: 22px; font-weight: 700; margin-bottom: 24px; color: #1f1f1f; text-align: center; }
+        .projects-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(360px, 1fr)); gap: 24px; }
+        .project-card {
             background: #ffffff; border-radius: 12px; padding: 24px;
             box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
             border: 1px solid #eaeaea; transition: all 0.3s ease;
@@ -57,6 +57,12 @@
 
         <h2 class="section-title">我的项目展示</h2>
         <div class="projects-grid">
+            <div class="project-card">
+                <h3>校园智能失物招领系统</h3>
+                <p>深度融合了人工智能，实现了AI识别、匹配以及通知撰写等功能，提高了失物招领的效率和准确性</p>
+                <!-- 替换 xiangu1.png 为你的真实图片名 -->
+                <img src="swzl.png" alt="校园智能失物招领系统界面截图" class="project-img">
+            </div>
             <!-- 项目 1 -->
             <div class="project-card">
                 <h3>智能农场</h3>
