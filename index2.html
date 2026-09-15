@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的主页 - Cloudflare Style</title>
+    <style>
+        body {
+            margin: 0; padding: 60px 20px;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: #f8f9fa; color: #1f1f1f;
+            display: flex; justify-content: center;
+        }
+        .container { width: 100%; max-width: 900px; }
+        /* 个人简介区 */
+        .header { text-align: center; margin-bottom: 60px; }
+        .avatar {
+            width: 80px; height: 80px; border-radius: 50%;
+            background: #f6821f; color: white;
+            display: flex; justify-content: center; align-items: center;
+            font-size: 32px; font-weight: 600; margin: 0 auto 20px auto;
+        }
+        .header h1 { margin: 0 0 12px 0; font-size: 32px; font-weight: 700; letter-spacing: -0.5px; }
+        .header p { margin: 0 auto; max-width: 600px; color: #5c5c5c; font-size: 16px; line-height: 1.6; }
+        .links { margin-top: 24px; }
+        .links a {
+            display: inline-block; color: #f6821f; text-decoration: none; margin: 0 12px; font-weight: 600; font-size: 15px;
+        }
+        .links a:hover { color: #d96f15; text-decoration: underline; }
+        
+        /* 项目展示区 */
+        .section-title { font-size: 22px; font-weight: 700; margin-bottom: 24px; color: #1f1f1f; text-align: center; }
+        .projects-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(360px, 1fr)); gap: 24px; }
+        .project-card {
+            background: #ffffff; border-radius: 12px; padding: 24px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+            border: 1px solid #eaeaea; transition: all 0.3s ease;
+        }
+        .project-card:hover { transform: translateY(-4px); box-shadow: 0 12px 20px -5px rgba(0, 0, 0, 0.1); border-color: #f6821f; }
+        .project-card h3 { margin: 0 0 12px 0; font-size: 18px; color: #1f1f1f; }
+        .project-card p { margin: 0 0 20px 0; font-size: 14px; color: #666666; line-height: 1.6; }
+        .project-img { width: 100%; border-radius: 8px; border: 1px solid #eaeaea; display: block; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="avatar">H</div>
+            <h1>Protium</h1>
+            <p>一个创意满满，同时也很高兴吸纳队友优秀创意，愿意用整整48个小时全身心投入、拼命折腾、学习力极强的AI时代原住民。曾多次斩获人工智能大赛、科技节等科技创新赛事大奖。</p>
+            <div class="links">
+                <a href="https://github.com/HUMAN-DONGRUNZE" target="_blank">GitHub</a>
+                <a href="https://gitee.com/protium-1" target="_blank">Gitee</a>
+                <a href="mailto:18758863392@163.com">邮箱</a>
+            </div>
+        </div>
+
+        <h2 class="section-title">我的项目展示</h2>
+        <div class="projects-grid">
+            <!-- 项目 1 -->
+            <div class="project-card">
+                <h3>智能农场</h3>
+                <p>图形化树莓派编程，实现了自动化控制农场中的风扇、补光灯以及信息显示大屏等功能</p>
+                <!-- 替换 xiangu1.png 为你的真实图片名 -->
+                <img src="Project1.png" alt="项目1代码截图" class="project-img">
+            </div>
+            <!-- 项目 2 -->
+            <div class="project-card">
+                <h3>智能售票与检票系统</h3>
+                <p>图形化树莓派编程，实现了自动售票、检票和数据统计功能</p>
+                <img src="Project2.png" alt="项目2代码截图" class="project-img">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
